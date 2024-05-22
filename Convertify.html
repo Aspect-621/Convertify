@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertify</title>
+    <link rel="stylesheet" href="convertify.css">
+    <script src="convertify.js"></script>
+    <style>
+        .clickStart {
+            position: absolute;
+            bottom: 100px;
+            left: 150px;
+            font-size: large;
+            border-radius: 10px;
+            padding: 10px 20px;
+            background: linear-gradient(to right, #9900ff 0%, #990099 100%);
+            border: none;
+            cursor: pointer;
+        }
+
+        .clickStart:hover {
+            background: rgb(185, 0, 185);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parentAll">
+        <div id="parentClassHome" class="parentClassHome">
+            <button class="clickStart" onclick="changePick()">CONVERT HERE</button>
+        </div>
+
+
+        <div id="pickParentClass" class="pickParentClass">
+            <div class="headerPick">
+                <center>
+                    <h1>CONVERTIFY</h1>
+                </center>
+            </div>
+
+
+            <div class="lengthPickParent">
+                <div class="childLength">
+                    <div class="lengthPick"></div>
+                    <center>
+                        <h1>Length</h1>
+                        <button class="click" onclick="changeToConverter(1)">CONVERT</button>
+                    </center>
+                </div>
+            </div>
+
+            <div class="massPickParent">
+                <div class="childMass">
+                    <div class="massPick"></div>
+                    <center>
+                        <h1>Mass</h1>
+                        <button class="click" onclick="changeToConverter(2)">CONVERT</button>
+                    </center>
+                </div>
+            </div>
+            <div class="timePickParent">
+                <div class="childTime">
+                    <div class="timePick"></div>
+                    <center>
+                        <h1>Time</h1>
+                        <button class="click" onclick="changeToConverter(3)">CONVERT</button>
+                    </center>
+                </div>
+            </div>
+            <div class="temperaturePickParent">
+                <div class="childTemperature">
+                    <div class="temperaturePick"></div>
+                    <center>
+                        <h1>Temperature</h1>
+                        <button class="click" onclick="changeToConverter(4);">CONVERT</button>
+                    </center>
+                </div>
+            </div>
+        </div>
+
+        <div id="convertParent" class="convertParent">
+
+
+            <div class="childParent">
+                <div class="headerPick1">
+                    <h1>&nbsp&nbsp&nbsp&nbsp</h1>
+                    <button class="click1" onclick="changePick()">BACK </button>
+                    <center>
+                        <h1>&nbsp&nbsp&nbsp&nbspCONVERTIFY</h1>
+                    </center>
+                </div>
+
+                <div id="lengthConvert" class="lengthConvert">
+                    <div class="inputClass">
+                    <input class="click" type="number" id="inputValueLength" placeholder="Enter length">
+                    <select class="click" id="inputUnitLength">
+                        <option value="millimeters">Millimeters</option>
+                        <option value="centimeters">Centimeters</option>
+                        <option value="meters">Meters</option>
+                        <option value="kilometers">Kilometers</option>
+                        <option value="inches">Inches</option>
+                        <option value="feet">Feet</option>
+                        <option value="yards">Yards</option>
+                        <option value="miles">Miles</option>
+                    </select>
+                    <button class="click" onclick="convertLength()">Convert</button>
+                </div>
+                    <div class="results" id="resultsLength"></div>
+                </div>
+
+                <div id="massConvert" class="massConvert">
+                    <div class="inputClass">
+                    <input class="click" type="number" id="inputValueMass" placeholder="Enter mass">
+                    <select class="click" id="inputUnitMass">
+                        <option value="grams">Grams</option>
+                        <option value="kilograms">Kilograms</option>
+                        <option value="milligrams">Milligrams</option>
+                        <option value="pounds">Pounds</option>
+                        <option value="ounces">Ounces</option>
+                        <option value="metrictons">Metric Tons</option>
+                        <option value="stones">Stones</option>
+                    </select>
+                    <button class="click" onclick="convertMass()">Convert</button>
+                </div>
+                <div class="results" id="resultsMass"></div>
+                </div>
+
+                <div id="timeConvert" class="timeConvert">
+                    <div class="inputClass">
+
+                    <input class="click" type="number" id="inputValueTime" placeholder="Enter time">
+                    <select class="click" id="inputUnitTime">
+                        <option value="milliseconds">Milliseconds</option>
+                        <option value="seconds">Seconds</option>
+                        <option value="minutes">Minutes</option>
+                        <option value="hours">Hours</option>
+                        <option value="days">Days</option>
+                        <option value="weeks">Weeks</option>
+
+                    </select>
+                    <button class="click" onclick="convertTime()">Convert</button>
+                </div>
+                    <div class="results" id="resultsTime"></div>
+                </div>
+
+                <div id="temperatureConvert" class="temperatureConvert">
+                    <div class="inputClass">
+
+                    <input class="click" type="number" id="inputValueTemp" placeholder="Enter temperature">
+                    <select class="click" id="inputUnitTemp">
+                        <option value="Celsius">Celsius</option>
+                        <option value="Fahrenheit">Fahrenheit</option>
+                        <option value="Kelvin">Kelvin</option>
+                    </select>
+                    <button class="click" onclick="convertTemperature()">Convert</button>
+                </div>
+                <div class="results" id="resultsTemp"></div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

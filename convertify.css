@@ -1,0 +1,259 @@
+body {
+
+    background-color: black;
+    ;
+}
+
+.parentAll {
+    position: fixed;
+    margin: 0px;
+    width: 99vw;
+    height: 98vh;
+    z-index: 10;
+
+}
+
+.parentClassHome {
+    position: absolute;
+    margin: 0;
+    width: 99vw;
+    height: 98vh;
+    background-image: url('assets/img/Home.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: pink;
+    border: 1px solid gray;
+    z-index: 10;
+    visibility: visible;
+    /* CHANGE THIS */
+}
+
+
+.pickParentClass {
+    position: absolute;
+    margin: 0px;
+    width: 99vw;
+    height: 98vh;
+    z-index: 15;
+    background-color: #281549;
+    border: 1px solid gray;
+    z-index: 9;
+    visibility: hidden;
+    /* CHANGE THIS */
+    display: flex;
+    color: whitesmoke;
+
+
+}
+
+.headerPick {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    color: whitesmoke;
+    /*background-color: pink;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+.headerPick1 {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    color: whitesmoke;
+    /*background-color: pink;*/
+    display: flex;
+    align-items: center;
+font-size: 50px;
+}
+
+.lengthConvert{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    bottom: 0px;
+    /*background-color: red;*/
+    visibility: hidden;
+}
+
+.inputClass{
+    position: relative;
+    width: 100%;
+    height: 30%;
+    /*background-color: blue;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.results{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(185, 0, 185,0.5);
+    font-size: 30px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: whitesmoke;
+}
+
+
+
+
+
+.temperatureConvert{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    bottom: 0px;
+    /*background-color: violet;*/
+    visibility: hidden;
+}
+
+.massConvert{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    bottom: 0px;
+    /*background-color: blue;*/
+    visibility: hidden;
+}
+.timeConvert
+{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    bottom: 0px;
+    /*background-color: pink;*/
+    visibility: hidden; 
+}
+
+.lengthPickParent,
+.massPickParent,
+.timePickParent,
+.temperaturePickParent {
+    width: 25%;
+    height: 100%;
+    position: static;
+}
+
+
+.lengthPickParent {
+   /*background-color: green;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lengthPick {
+    width: 250px;
+    height: 250px;
+    /*background-color: brown;*/
+    background-image: url('assets/img/length.png');
+    background-repeat: no-repeat;
+}
+
+.click {
+    position: static;
+    bottom: 100px;
+    left: 150px;
+    font-size: large;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #9900ff 0%, #990099 100%);
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.click:hover {
+    background: rgb(185, 0, 185);
+}
+
+.click1 {
+    position: static;
+    bottom: 100px;
+    left: 150px;
+    font-size: 30px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #9900ff 0%, #990099 100%);
+    border: none;
+    cursor: pointer;
+    color: white;
+
+}
+
+.click1:hover {
+    background: rgb(185, 0, 185);
+}
+
+
+
+
+
+.massPickParent {
+    /*background-color: blue;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.massPick {
+    width: 250px;
+    height: 250px;
+    /*background-color: brown;*/
+    background-image: url('assets/img/mass.png');
+    background-repeat: no-repeat;
+}
+
+
+.timePickParent {
+    /*background-color: brown;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.timePick {
+    width: 250px;
+    height: 250px;
+    /*background-color: brown;*/
+    background-image: url('assets/img/time.png');
+    background-repeat: no-repeat;
+}
+
+.temperaturePickParent {
+    /*background-color: orange;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.temperaturePick {
+    width: 250px;
+    height: 250px;
+    /*background-color: brown;*/
+    background-image: url('assets/img/temp.png');
+    background-repeat: no-repeat;
+}
+
+
+.convertParent {
+    position: absolute;
+    margin: 0px;
+    width: 99vw;
+    height: 98vh;
+    z-index: 15;
+    background-color: #281549;
+    border: 1px solid gray;
+    z-index: 8;
+    visibility: visible;
+    /* CHANGE THIS */
+    background-image: url('assets/img/bg.png');
+    background-size: cover;
+}
